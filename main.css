@@ -17,6 +17,10 @@ body {
   border: 5px solid green;
 }
 
+#header {
+  text-align: center;
+}
+
 #header .avatar {
   border-radius: 100%;
   display: inline-block;
@@ -72,4 +76,23 @@ body {
 
 #header ul.icons li .label {
   display: none;
+}
+
+.main .thumbnails {
+  display: flex;
+  padding: 1.5rem;
+}
+
+.main .thumbnails div {
+  flex: 1;
+  border: 1px solid pink;
+  text-align: center;
+}
+
+.main .thumbnails div h3 {
+  margin-top: 5px;
+  border-radius: 5%;
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
+  border-right: 2px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
 }
