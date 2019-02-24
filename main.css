@@ -1,135 +1,141 @@
 body {
-  background: url(./images/bg.jpg);
+  background-image: url("./images/bg.jpg");
   background-size: cover;
 }
 
 #wrapper {
-  margin: 4rem auto;
   max-width: 68rem;
+  margin: 4rem auto;
 }
 
 #header {
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  margin-bottom: 3rem;
 }
-
 #header .avatar {
-  border-radius: 100%;
   display: inline-block;
-  padding: 0.25rem;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.4rem;
   background-color: rgba(255, 255, 255, 0.1);
-  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
 }
 
 #header .avatar img {
-  border-radius: 100%;
   display: block;
-}
-#header h1 {
-  font-size: 1.25rem;
-  font-weight: 200;
-  color: rgba(255, 255, 255, 0.5);
-  font-family: "Source Sans Pro", sans-serif;
-  margin-bottom: 2rem;
+  border-radius: 100%;
 }
 
-#header h1 strong {
-  font-size: inherit;
-  font-weight: inherit;
-  color: rgba(255, 255, 255, 0.8);
+#header h1 {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 200;
+  font-size: 1.5rem;
+  margin: 2rem auto;
+}
+
+#header strong {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 200;
 }
 
 #header h1 a {
-  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.4);
   font-weight: 200;
-  color: inherit;
   text-decoration: none;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
 }
 
 #header .icons li {
+  transition: 0.2s all;
   display: inline-flex;
-  border-radius: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  background-color: rgba(255, 255, 255, 0.1);
   margin-right: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 100%;
   width: 2rem;
   height: 2rem;
+  padding: 0.2rem;
   justify-content: center;
   align-items: center;
 }
+#header .icons li:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
 
-#header .icons li a {
+#header .icons a {
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
 }
 
 #header .icons .label {
   display: none;
 }
 
+#header .icons a::before {
+  font-size: 1.5rem;
+}
+
 .main .thumbnails {
   display: flex;
 }
-.main .thumbnails > div {
-  flex: 1;
-  margin-right: 1rem;
-  margin-left: 1rem;
-}
 
-.main .thumbnails > div img {
-  width: 100%;
-  border-top-left-radius: 0.4rem;
-  border-top-right-radius: 0.4rem;
-  vertical-align: middle;
-}
-.main .thumbnails > div a {
-  text-decoration: none;
-  display: block;
-  margin-bottom: 2rem;
-}
-
-.main .thumbnails h3 {
+.main .thumbnails div {
+  margin: 0.5rem;
   text-align: center;
-  font-weight: 300;
-  background-color: rgba(255, 255, 255, 0.15);
-  color: rgba(255, 255, 255, 0.8);
+}
+
+.main .thumbnails div a {
+  display: block;
+  margin-bottom: 1.8rem;
+  text-decoration: none;
+}
+
+.main .thumbnails div a:hover {
+  box-shadow: rgba(255, 0, 0, 0.15) 0 0 4px 4px;
+  transition: 0.2s all;
+}
+
+.main .thumbnails div img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 0.15rem;
+  border-top-right-radius: 0.15rem;
+}
+.main .thumbnails a h3 {
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 200;
   margin: 0;
-  padding: 0.3rem;
-  border-left: 1px solid rgba(255, 255, 255, 0.8);
-  border-right: 1px solid rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-  border-bottom-left-radius: 0.4rem;
-  border-bottom-right-radius: 0.4rem;
+  padding: 0.4rem 0 0.2rem 0;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
 }
 
 .footer {
-  margin-top: 2rem;
+  margin: 1rem 0 2rem 0;
+  text-align: center;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.4);
 }
+
 .footer::before {
   content: "";
-  display: block;
-  width: 15rem;
-  margin: auto;
-  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  width: 8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .footer p {
-  padding-top: 2rem;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 200;
+  margin-top: 3rem;
 }
 
-.footer p a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
-}
-
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .main .thumbnails {
     display: block;
   }
